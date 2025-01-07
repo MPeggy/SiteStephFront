@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="scss/main.css"/>
+    
+    <link rel="stylesheet" href="/scss/main.css"/>
 
     <title>Site Stéphanie Regairaz</title>
 </head>
@@ -38,21 +39,24 @@
               <a class="nav-link" href="/pages/equicoaching.html">L'Équicoaching</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Qui suis je ?</a>
+              <a class="nav-link" href="/pages/jesuis.html">Qui suis-je ?</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Prendre rendez-vous</a>
+              <a class="nav-link" href="/pages/reservation/reserver.html">Prendre rendez-vous</a>
             </li><li class="nav-item">
-              <a class="nav-link" href="#">Blog</a>
+              <a class="nav-link" href="/pages/404.html">Blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">FAQ</a>
+              <a class="nav-link" href="/pages/404.html">FAQ</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Avis</a>
+              <a class="nav-link" href="/pages/404.html">Avis</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Connexion/Deconnexion</a>
+            <li class="nav-item" data-show="disconnected">
+              <a class="nav-link" href="/signin">Connexion</a>
+            </li>
+            <li class="nav-item" data-show="connected">
+              <a class="nav-link" id="signout-btn">Déconnexion</a>
             </li>
           </ul>
         </div>
@@ -60,15 +64,15 @@
     </nav>
   </header>
 
-    <main id="main-page"> 
+  <main id="main-page"> 
     <!--Le contenu de la page-->
-    </main>
+  </main>
 
   <footer class="bg-secondary text-primary text-center footer">
     <div class="row">
       <div class="col-12 col-lg-4">
         <h3>Mes horaires</h3>
-        <p>Du lundi au vendredi 9:00-12:00 & 14:00-18:00</p>
+        <p>Du lundi au jeudi 9:00-12:00 & 14:00-19:00</p>
       </div>
       <div class="col-6 col-lg-4">
         <p>Stéphanie R<br/>
@@ -96,8 +100,9 @@
     </div>
   </footer>
     
-    <script type="module" src="Router/router.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="/js/script.js"></script>
+  <script type="module" src="Router/router.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
