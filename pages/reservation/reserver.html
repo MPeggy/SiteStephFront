@@ -7,26 +7,26 @@
 <div class="container">
     <form>
         <div class="mb-3">
-            <label for="NomInput" class="form-label">Nom</label>
-            <input disabled type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="John" name="Nom" > 
+            <label for="ActivitySelect" class="form-label">Activité souhaitée</label>
+            <select class="form-select" id="ActivitySelect" name="Activity">
+                <option value="" selected>Choisir une activité</option>
+                <option value="coaching">Coaching</option>
+                <option value="relation">Relation d'aide</option>
+            </select>
         </div>
-        <div class="mb-3">
-            <label for="PrenomInput" class="form-label">Prénom</label>
-            <input disabled type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" value="Doe" name="Prenom"> 
-        </div>
-        <div class="mb-3">
-            <label for="CommentairesInput" class="form-label">Commentaires</label>
-            <input type="text" class="form-control" id="CommentairesInput" placeholder="Vos commentaires)"  value="Aucun" name="Commentaires"> 
+        <div id="AlertInfo" class="alert alert-info">
+            Veuillez sélectionner une spécialité pour voir les jours et horaires disponibles.
         </div>
         <div class="mb-3">
             <label for="DateInput" class="form-label">Date</label>
-            <input type="date" class="form-control" id="DateInput" name="Date"> 
+            <input type="date" class="form-control" id="DateInput" name="Date" disabled>
         </div>
         <div class="mb-3">
             <label for="selectHour" class="form-label">Heure</label>
             <select class="form-select" id="selectHour" name="Heure">
+                <option value="" selected>Veuillez d'abord choisir une date</option>
             </select>
-        </div>        
+        </div>
         <div class="text-center">
             <button type="submit" class="btn btn-primary">Prendre rendez-vous</button>
             <button type="button" class="btn btn-danger">Annuler</button>
