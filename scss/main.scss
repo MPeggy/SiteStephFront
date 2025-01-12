@@ -11,7 +11,7 @@ html{
 }
 
 main{
-    margin-bottom: 250px;
+    margin-bottom: 270px;
 }
 
 footer.footer{
@@ -39,6 +39,7 @@ p{
         background-size: cover;
         filter: brightness(0.6);
     }
+    
     *{
         //Positionner les éléments devant le ::before
         position:relative;
@@ -62,4 +63,8 @@ p{
         color: $black;
         padding:10px;
     }
+}
+
+.form-label {
+    color: primary;
 }

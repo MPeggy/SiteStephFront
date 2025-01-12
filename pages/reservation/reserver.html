@@ -1,11 +1,19 @@
 <div class="hero-scene text-center text-white">
-    <div class="hero-scene-content">
+    <div class="hero-scene-content p-4">
         <h1>Mon rendez-vous</h1>
     </div>
 </div>
 
 <div class="container">
     <form>
+        <div class="mb-3">
+            <label for="NomInput" class="form-label">Nom</label>
+            <input disabled type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="John" name="Nom" > 
+        </div>
+        <div class="mb-3">
+            <label for="PrenomInput" class="form-label">Prénom</label>
+            <input disabled type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" value="Doe" name="Prenom"> 
+        </div>
         <div class="mb-3">
             <label for="ActivitySelect" class="form-label">Activité souhaitée</label>
             <select class="form-select" id="ActivitySelect" name="Activity">

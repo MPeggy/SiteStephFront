@@ -11976,7 +11976,7 @@ html {
 }
 
 main {
-  margin-bottom: 250px;
+  margin-bottom: 270px;
 }
 
 footer.footer {
@@ -12024,4 +12024,8 @@ p {
   display: block;
   color: rgb(76, 68, 68);
   padding: 10px;
+}
+
+.form-label {
+  color: primary;
 }/*# sourceMappingURL=main.css.map */

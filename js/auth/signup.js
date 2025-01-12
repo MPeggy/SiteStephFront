@@ -1,5 +1,5 @@
 //Implémenter le JS de ma page
-
+alert("test");
 const inputNom = document.getElementById("NomInput");
 const inputPreNom = document.getElementById("PrenomInput");
 const inputMail = document.getElementById("EmailInput");
@@ -24,7 +24,7 @@ function validateForm(){
     const passwordOk = validatePassword(inputPassword);
     const passwordConfirmOk = validateConfirmationPassword(inputPassword,inputValidationPassword);
 
-    if(nomOk && prenomOk && mailOk && passwordOk &&  passwordConfirmOk){
+    if(nomOk && prenomOk && mailOk && passwordOk && passwordConfirmOk){
         btnValidation.disabled = false;
     }
     else{
