@@ -1,3 +1,4 @@
+alert("le script est bien chargé");
 const tokenCookieName = "accesstoken";
 const roleCookieName = "role";
 const signoutBtn = document.getElementById("signout-btn");

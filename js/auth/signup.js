@@ -1,5 +1,5 @@
 //Implémenter le JS de ma page
-alert("test");
+alert("testsignup.js  chargé");
 const inputNom = document.getElementById("NomInput");
 const inputPreNom = document.getElementById("PrenomInput");
 const inputMail = document.getElementById("EmailInput");

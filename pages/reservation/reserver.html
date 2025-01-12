@@ -4,40 +4,47 @@
     </div>
 </div>
 
-<div class="container">
+<div class="container text-primary p-4">
     <form>
         <div class="mb-3">
-            <label for="NomInput" class="form-label">Nom</label>
+            <label for="NomInput" class="form-label fw-bold">Nom</label>
             <input disabled type="text" class="form-control" id="NomInput" placeholder="Votre nom" value="John" name="Nom" > 
         </div>
         <div class="mb-3">
-            <label for="PrenomInput" class="form-label">Prénom</label>
+            <label for="PrenomInput" class="form-label fw-bold">Prénom</label>
             <input disabled type="text" class="form-control" id="PrenomInput" placeholder="Votre prénom" value="Doe" name="Prenom"> 
         </div>
         <div class="mb-3">
-            <label for="ActivitySelect" class="form-label">Activité souhaitée</label>
-            <select class="form-select" id="ActivitySelect" name="Activity">
-                <option value="" selected>Choisir une activité</option>
-                <option value="coaching">Coaching</option>
-                <option value="relation">Relation d'aide</option>
-            </select>
-        </div>
-        <div id="AlertInfo" class="alert alert-info">
-            Veuillez sélectionner une spécialité pour voir les jours et horaires disponibles.
-        </div>
-        <div class="mb-3">
-            <label for="DateInput" class="form-label">Date</label>
-            <input type="date" class="form-control" id="DateInput" name="Date" disabled>
-        </div>
-        <div class="mb-3">
-            <label for="selectHour" class="form-label">Heure</label>
-            <select class="form-select" id="selectHour" name="Heure">
-                <option value="" selected>Veuillez d'abord choisir une date</option>
-            </select>
-        </div>
+            <div class="mb-3">
+                <label for="ActiviteChoisie" class="form-label fw-bold">Choisissez une activité</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="ActivitéChoisie" id="CoachingRadio">
+                    <label class="form-check-label" for="CoachingRadio">Coaching</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="ActivitéChoisie" id="RelationdaideRadio">
+                    <label class="form-check-label" for="RelationdaideRadio">Relation d'aide</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="DateInput" class="form-label fw-bold">Choisissez une date</label>
+                <input type="date" class="form-control" id="DateInput" name="Date">
+            </div>
+            <div class="mb-3">
+                <label for="selectHour" class="form-label fw-bold">Choisissez une heure</label>
+                <select class="form-select" id="selectHour" name="Heure">
+                    <option value="9:00">9:00</option>
+                    <option value="10:10">10:10</option>
+                    <option value="11:20">11:20</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:10">15:10</option>
+                    <option value="16:20">16:20</option>
+                    <option value="17:30">17:30</option>
+                </select>
+            </div>
         <div class="text-center">
-            <button type="submit" class="btn btn-primary">Prendre rendez-vous</button>
-            <button type="button" class="btn btn-danger">Annuler</button>
+            <button type="submit" class="btn btn-primary">Réserver</button>
+            <button type="button" class="btn btn-danger">Réinitialiser</button>
         </div>
     </form>
 </div>
