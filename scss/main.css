@@ -11986,6 +11986,11 @@ footer.footer {
   width: 100%;
 }
 
+.marque {
+  font-family: "Josefin sans", sans-serif;
+  font-size: 14px;
+}
+
 p {
   font-family: "Josefin sans", sans-serif;
   font-size: 18px;
